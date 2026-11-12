@@ -1,0 +1,487 @@
+/* ==========================================================================
+   KESHATEL // FULL-SCREEN ENTRY PAGE STYLESHEET
+   Ultra-Luxury International Beauty House Brand Introduction
+   Deep Forest Green, Imperial Gold & Opulent Cream Palette
+   ========================================================================== */
+
+:root {
+  --bg-deep-forest: #051810;
+  --bg-emerald-glow: #0A291B;
+  --gold-primary: #D4AF37;
+  --gold-light: #F4E2AA;
+  --gold-shimmer: #FFF6D6;
+  --gold-dark: #8F6E28;
+  --cream-soft: #FAF7F2;
+  --cream-muted: #D5C8B4;
+  
+  --gold-gradient: linear-gradient(135deg, #FFF2CE 0%, #D4AF37 35%, #F0D593 65%, #9E7A32 100%);
+  --gold-glow: rgba(212, 175, 55, 0.35);
+
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-display: 'Cinzel', 'Cormorant Garamond', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-deep-forest);
+  font-family: var(--font-sans);
+  color: var(--cream-soft);
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Floating Green Leaves Canvas Overlay */
+#botanical-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Full-Screen Entry Stage */
+.entry-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, #0E3524 0%, #082216 45%, #04140D 85%, #020B07 100%);
+  overflow: hidden;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Cinematic Background Ambient Orbs */
+.ambient-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 1;
+  animation: orbBreathe 8s ease-in-out infinite alternate;
+}
+
+.orb-center {
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.16) 0%, rgba(46, 125, 50, 0.22) 50%, transparent 75%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orb-top-left {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(46, 125, 50, 0.25) 0%, transparent 70%);
+  top: -100px;
+  left: -100px;
+}
+
+.orb-bottom-right {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.14) 0%, transparent 70%);
+  bottom: -100px;
+  right: -100px;
+}
+
+@keyframes orbBreathe {
+  0% { transform: scale(0.9) translate(-50%, -50%); opacity: 0.7; }
+  100% { transform: scale(1.15) translate(-48%, -52%); opacity: 1; }
+}
+
+/* Subtle Sacred Botanical Mandala Background Ring */
+.sacred-mandala-ring {
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+  animation: mandalaRotate 140s linear infinite;
+}
+
+.sacred-mandala-ring::before {
+  content: '';
+  position: absolute;
+  inset: 30px;
+  border-radius: 50%;
+  border: 1px dashed rgba(212, 175, 55, 0.08);
+}
+
+.sacred-mandala-ring::after {
+  content: '';
+  position: absolute;
+  inset: 80px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.06);
+}
+
+@keyframes mandalaRotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Fine Vignette Frame */
+.vignette-overlay {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 140px rgba(0, 0, 0, 0.85);
+  pointer-events: none;
+  z-index: 6;
+}
+
+/* Corner Filigree Borders */
+.corner-filigree {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  z-index: 7;
+  opacity: 0.45;
+  transition: opacity 0.5s ease;
+}
+
+.entry-viewport:hover .corner-filigree {
+  opacity: 0.85;
+}
+
+.corner-tl { top: 32px; left: 32px; border-top: 2px solid var(--gold-primary); border-left: 2px solid var(--gold-primary); }
+.corner-tr { top: 32px; right: 32px; border-top: 2px solid var(--gold-primary); border-right: 2px solid var(--gold-primary); }
+.corner-bl { bottom: 32px; left: 32px; border-bottom: 2px solid var(--gold-primary); border-left: 2px solid var(--gold-primary); }
+.corner-br { bottom: 32px; right: 32px; border-bottom: 2px solid var(--gold-primary); border-right: 2px solid var(--gold-primary); }
+
+/* --- Central Brand Portal Card --- */
+.brand-portal-card {
+  position: relative;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  max-width: 900px;
+  transition: transform 0.25s cubic-bezier(0.2, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* 1. Minimal Herbal Leaf Logo */
+.leaf-logo-wrapper {
+  margin-bottom: 22px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaf-logo-svg {
+  width: 72px;
+  height: 72px;
+  filter: drop-shadow(0 0 14px rgba(212, 175, 55, 0.45));
+  animation: leafFloat 5s ease-in-out infinite alternate;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.brand-portal-card:hover .leaf-logo-svg {
+  transform: scale(1.1) translateY(-4px);
+  filter: drop-shadow(0 0 24px rgba(212, 175, 55, 0.75));
+}
+
+@keyframes leafFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+/* 2. Brand Name Typography: KESHATEL */
+.brand-title-wrap {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+/* Glowing Ambient Halo behind brand name */
+.brand-glow-halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140%;
+  height: 160%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.25) 0%, rgba(46, 125, 50, 0.15) 45%, transparent 70%);
+  filter: blur(28px);
+  pointer-events: none;
+  animation: glowPulse 4.5s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.55; transform: translate(-50%, -50%) scale(0.92); }
+  100% { opacity: 0.95; transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 7.8vw, 6.8rem);
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-indent: 0.28em; /* Centers letter-spaced text precisely */
+  line-height: 1;
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 25px rgba(212, 175, 55, 0.35));
+  position: relative;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Shimmer beam traveling across KESHATEL letters */
+.brand-title::after {
+  content: 'KESHATEL';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerTitle 5s infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmerTitle {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.brand-portal-card:hover .brand-title {
+  filter: drop-shadow(0 6px 22px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 35px rgba(212, 175, 55, 0.6));
+}
+
+/* 3. Brand Tagline */
+.brand-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2.2vw, 1.85rem);
+  letter-spacing: 0.12em;
+  color: var(--gold-light);
+  margin-bottom: 40px;
+  font-weight: 400;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.95;
+}
+
+/* Divider Gold Accent */
+.brand-divider {
+  width: 140px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+  margin-bottom: 34px;
+}
+
+/* 4. ENTER THE WORLD OF KESHATEL Button */
+.enter-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 42px;
+  background: rgba(10, 36, 25, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 9999px;
+  color: var(--cream-soft);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 20px rgba(212, 175, 55, 0.2);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.enter-button-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.enter-button-main i {
+  font-size: 0.95rem;
+  transition: transform 0.35s ease;
+  color: var(--gold-primary);
+}
+
+.enter-subtext {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  opacity: 0.8;
+}
+
+/* Hover & Pulse Effects on Enter Button */
+.enter-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.35), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.75s ease;
+}
+
+.enter-button:hover {
+  background: rgba(14, 46, 32, 0.9);
+  border-color: var(--gold-light);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55), 0 0 32px rgba(212, 175, 55, 0.45);
+}
+
+.enter-button:hover::before {
+  left: 140%;
+}
+
+.enter-button:hover .enter-button-main i {
+  transform: translateX(6px);
+  color: #FFFFFF;
+}
+
+.enter-button:hover .enter-button-main {
+  color: #FFFFFF;
+}
+
+/* Subtle Click/Tap Prompt */
+.tap-prompt {
+  margin-top: 24px;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: fadeInOut 2.5s infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0.35; transform: translateY(0); }
+  100% { opacity: 0.85; transform: translateY(-3px); }
+}
+
+/* Bottom Heritage Bar */
+.heritage-footer-bar {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  opacity: 0.5;
+  z-index: 15;
+}
+
+.heritage-footer-bar span.bullet {
+  color: var(--gold-primary);
+  font-size: 0.55rem;
+}
+
+/* ==========================================================================
+   CINEMATIC TRANSITION SEQUENCE ON ENTER (LIGHT BURST & DISSOLVE)
+   ========================================================================== */
+.transition-curtain {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #FFF3D1 0%, #D4AF37 40%, #071F15 80%, #020B07 100%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0.9);
+}
+
+.transition-curtain.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1.1);
+}
+
+.brand-portal-card.exiting {
+  transform: scale(1.15) !important;
+  opacity: 0;
+  filter: blur(12px);
+  transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 768px) {
+  .corner-filigree {
+    display: none;
+  }
+  .brand-portal-card {
+    padding: 20px;
+  }
+  .leaf-logo-svg {
+    width: 58px;
+    height: 58px;
+  }
+  .brand-title {
+    font-size: 3.2rem;
+    letter-spacing: 0.22em;
+    text-indent: 0.22em;
+  }
+  .brand-tagline {
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 28px;
+  }
+  .enter-button {
+    padding: 14px 32px;
+    width: 90%;
+    max-width: 320px;
+  }
+  .enter-button-main {
+    font-size: 0.82rem;
+    letter-spacing: 0.16em;
+  }
+  .heritage-footer-bar {
+    bottom: 16px;
+    font-size: 0.62rem;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+  }
+}

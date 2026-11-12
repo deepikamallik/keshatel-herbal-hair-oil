@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KESHATEL | Unlock the Secret of Naturally Beautiful Hair</title>
+  <meta name="description" content="Discover the power of Ayurveda with Keshatel Herbal Hair Oil. Slow-cooked with 21 sacred botanicals including Amla, Bhringraj, Neem, Hibiscus, and Aloe Vera to nourish roots, soothe scalps, and impart natural mirror shine.">
+  <meta name="keywords" content="Keshatel, herbal hair oil, ayurvedic hair oil, amla, bhringraj, hibiscus, aloe vera, neem, healthy hair growth">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Botanical Leaves & Natural Pollen Particles Canvas -->
+  <canvas id="botanical-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="announcement-marquee">
+      <i class="fa-solid fa-sparkles" style="color: var(--gold-light);"></i>
+      <span>Sacred Gift: Complimentary <strong class="highlight">Hand-Cast Bronze Kansa Scalp Comb</strong> on orders over $65</span>
+      <span style="opacity: 0.5;">•</span>
+      <span>100% Pure Ayurvedic Herbal Infusion</span>
+    </div>
+    <div class="announcement-extras">
+      <label for="currency-selector" class="sr-only" style="display:none;">Currency</label>
+      <select id="currency-selector" class="currency-select" aria-label="Select Currency">
+        <option value="USD">USD ($)</option>
+        <option value="EUR">EUR (€)</option>
+        <option value="GBP">GBP (£)</option>
+        <option value="INR">INR (₹)</option>
+      </select>
+      <span style="color: var(--cream-muted); font-size: 0.75rem;">Global Express Shipping</span>
+      <a href="entry.html" style="color: var(--gold-light); text-decoration: none; font-size: 0.74rem; letter-spacing: 0.08em; display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border: 1px solid rgba(197, 160, 89, 0.3); border-radius: 999px;">
+        <i class="fa-solid fa-sparkles"></i> Intro Portal
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Luxury Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="site-logo" aria-label="KESHATEL Home">
+        <div class="logo-symbol">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">KESHATEL</span>
+          <span class="logo-subtitle">Ayurvedic Hair Care</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#ingredients" class="nav-link">Ingredients</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Wishlist Button -->
+        <button class="icon-btn" id="wishlist-toggle-btn" aria-label="View Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-count" id="wishlist-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Bag Button -->
+        <button class="icon-btn" id="cart-toggle-btn" aria-label="View Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge-count" id="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Shop Now Header Button -->
+        <a href="#products" class="btn-header-cta">
+          <i class="fa-solid fa-sparkles"></i> Shop Now
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION: 3D Bottle Centerpiece, Background Video & Botanical Radiance -->
+  <section class="hero-section" id="home">
+    
+    <!-- Cinematic Looping Background Video -->
+    <div class="video-background-wrapper">
+      <video class="hero-video" id="hero-bg-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-drops-of-water-on-green-leaves-42939-large.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay-gradient"></div>
+    </div>
+
+    <!-- Cinematic Herbal Ambient Glow Orbs -->
+    <div class="herbal-glow-orb hero-glow-1"></div>
+    <div class="herbal-glow-orb hero-glow-2"></div>
+
+    <!-- Video & Ambient Sound Floating Controls HUD -->
+    <div class="video-controls">
+      <button class="video-ctrl-btn" id="video-play-toggle">
+        <i class="fa-solid fa-pause"></i> Pause Video
+      </button>
+      <span style="opacity: 0.3;">|</span>
+      <button class="video-ctrl-btn" id="ambient-sound-toggle">
+        <i class="fa-solid fa-volume-xmark"></i> Ambient: Off
+      </button>
+    </div>
+
+    <!-- Hero Content & 3D Stage Grid -->
+    <div class="container hero-grid">
+      
+      <!-- Left Column: Editorial Brand Headline -->
+      <div class="hero-content">
+        <div class="hero-badge-tag">
+          <i class="fa-solid fa-circle-check"></i> 100% Ayurvedic • Slow-Cooked Taila Paka Vidhi
+        </div>
+
+        <h1 class="hero-headline">
+          Unlock the Secret of <em>Naturally Beautiful Hair</em>
+        </h1>
+
+        <p class="hero-description">
+          Discover the power of Ayurveda with Keshatel Herbal Hair Oil. Slow-simmered with 21 sacred botanicals to deeply nourish follicles, soothe the scalp, stop fallout, and impart lustrous natural shine.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary">
+            <i class="fa-solid fa-bag-shopping"></i> Shop Now
+          </a>
+          <a href="#about" class="btn-secondary">
+            <i class="fa-solid fa-compass"></i> Discover More
+          </a>
+        </div>
+
+        <!-- Trust Stats -->
+        <div class="hero-trust-bar">
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Reduced Hair Fallout</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9 ★</span>
+            <span class="stat-label">14,200+ Global Reviews</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Natural Cold-Pressed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive 3D Herbal Hair Oil Bottle -->
+      <div class="hero-3d-stage" id="bottle-3d-stage">
+        <div class="canvas-container">
+          <canvas id="bottle-3d-canvas"></canvas>
+        </div>
+
+        <!-- Interactive Hotspot 1 -->
+        <div class="bottle-hotspot hotspot-1">
+          <div class="hotspot-pin"></div>
+          <div class="hotspot-card">
+            <strong>Brushed Gold Dropper</strong>
+            <span>Precise scalp follicle application</span>
+          </div>
+        </div>
+
+        <!-- Interactive Hotspot 2 -->
+        <div class="bottle-hotspot hotspot-2">
+          <div class="hotspot-pin"></div>
+          <div class="hotspot-card">
+            <strong>Keshatel Herbal Blend</strong>
+            <span>Suspended Ayurvedic botanicals</span>
+          </div>
+        </div>
+
+        <!-- 3D Bottle Interactive HUD -->
+        <div class="bottle-controls-hud">
+          <button class="hud-btn" id="hud-rotate-toggle">Pause 360°</button>
+          <button class="hud-btn" id="hud-glow-toggle">Herb Radiance</button>
+          <button class="hud-btn" id="hud-glass-toggle">Amber Glass</button>
+          <span><i class="fa-solid fa-hand-pointer"></i> Drag to inspect</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AYURVEDIC TRUST BAR STRIP -->
+  <section class="trust-strip">
+    <div class="container trust-features-grid">
+      <div class="trust-feature">
+        <div class="feature-icon-box">
+          <i class="fa-solid fa-fire-burner"></i>
+        </div>
+        <div class="feature-text">
+          <h4>Taila Paka Vidhi</h4>
+          <p>14-day slow simmer in copper cauldrons</p>
+        </div>
+      </div>
+      <div class="trust-feature">
+        <div class="feature-icon-box">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+        <div class="feature-text">
+          <h4>100% Wild Botanicals</h4>
+          <p>Hand-harvested Himalayan herbs</p>
+        </div>
+      </div>
+      <div class="trust-feature">
+        <div class="feature-icon-box">
+          <i class="fa-solid fa-droplet-slash"></i>
+        </div>
+        <div class="feature-text">
+          <h4>Zero Synthetic Fillers</h4>
+          <p>No silicones, parabens or mineral oils</p>
+        </div>
+      </div>
+      <div class="trust-feature">
+        <div class="feature-icon-box">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <div class="feature-text">
+          <h4>Ayush Certified</h4>
+          <p>Authentic Ayurvedic Pharmacopoeia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION: Introducing Keshatel & Natural Hair-Care Traditions -->
+  <section class="about-section section-padding" id="about">
+    <div class="container about-grid">
+      
+      <!-- Visual Column -->
+      <div class="about-visual">
+        <div class="about-image-frame">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80" alt="Keshatel Botanical Extraction" loading="lazy">
+        </div>
+        <div class="about-badge-floating">
+          <span class="badge-number">5,000</span>
+          <span class="badge-text">Years of Vedic Herbal Wisdom Preserved in Glass</span>
+        </div>
+      </div>
+
+      <!-- Narrative Column -->
+      <div class="about-text-content">
+        <span class="section-label">The Keshatel Legacy</span>
+        <h2 class="section-title">Sacred Natural Hair-Care Traditions for Modern Life</h2>
+        <p class="about-lead">
+          “When roots are nourished with pure living botanicals, hair unlocks its timeless natural strength and shine.”
+        </p>
+        <p>
+          <strong>KESHATEL</strong> was born from a reverent commitment to authentic Ayurvedic hair wellness. In an era dominated by synthetic chemicals and cheap mineral-oil fillers, Keshatel revives the sacred hair-care rituals practiced for generations across ancient India.
+        </p>
+        <p>
+          Every batch of Keshatel Herbal Hair Oil honors the classical <strong>Taila Paka Vidhi</strong>: whole herbs, wild roots, and fresh floral juices are gently slow-cooked in copper cauldrons with pure cold-pressed sesame and virgin coconut oils for 14 continuous days. Water gently evaporates, infusing the carrier oils with rich, highly-potent botanical nutrients that penetrate directly into your scalp and hair shaft.
+        </p>
+
+        <!-- Methodology Accordion Tabs -->
+        <div class="methodology-tabs">
+          <div class="method-card">
+            <div class="method-header">
+              <span class="method-number">01</span>
+              <span>Kalka (Herbal Paste Activation)</span>
+            </div>
+            <p>Fresh wild Bhringraj, Amla and Neem are stone-ground into a micro-paste to release active alkaloids.</p>
+          </div>
+          <div class="method-card">
+            <div class="method-header">
+              <span class="method-number">02</span>
+              <span>Kvatha (Decoction Boiling)</span>
+            </div>
+            <p>Simmered with spring water until concentrated to 1/4th volume to extract water-soluble tannins.</p>
+          </div>
+          <div class="method-card">
+            <div class="method-header">
+              <span class="method-number">03</span>
+              <span>Sneha Siddha (Oil Infusion Mastery)</span>
+            </div>
+            <p>Slowly bound into organic carrier oils until all moisture vanishes, yielding pure, shelf-stable nectar.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ANIMATED INGREDIENT SHOWCASE: The Pancha-Botanicals -->
+  <section class="ingredients-section section-padding" id="ingredients">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <span class="section-label">The Sacred Botanicals</span>
+        <h2 class="section-title">Five Miraculous Ayurvedic Herbs</h2>
+        <p class="section-subtitle">
+          Each herb is wild-harvested at peak lunar potency and cold-extracted to preserve fragile bio-active phytochemicals.
+        </p>
+      </div>
+
+      <!-- Ingredient Navigation Tabs -->
+      <div class="ingredient-nav-tabs">
+        <button class="ing-tab-btn active" data-ing="amla">
+          <i class="fa-solid fa-leaf"></i> Amla (Gooseberry)
+        </button>
+        <button class="ing-tab-btn" data-ing="bhringraj">
+          <i class="fa-solid fa-crown"></i> Bhringraj (King of Hair)
+        </button>
+        <button class="ing-tab-btn" data-ing="hibiscus">
+          <i class="fa-solid fa-spa"></i> Hibiscus (Japa Pushpa)
+        </button>
+        <button class="ing-tab-btn" data-ing="aloe">
+          <i class="fa-solid fa-droplet"></i> Aloe Vera (Kumari)
+        </button>
+        <button class="ing-tab-btn" data-ing="neem">
+          <i class="fa-solid fa-shield-halved"></i> Neem (Divine Healer)
+        </button>
+      </div>
+
+      <!-- Dynamic Ingredient Display Card (Driven by JS) -->
+      <div class="ingredient-display-card" id="ingredient-display-card">
+        <div class="ing-visual-col">
+          <div class="ing-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Amla">
+          </div>
+          <div class="ing-sanskrit-badge">आमलकी (Amalaki - "The Sustainer")</div>
+        </div>
+        <div class="ing-info-col">
+          <span class="ing-botanical-name">Emblica Officinalis</span>
+          <h3 class="ing-common-name">Amla (Indian Gooseberry)</h3>
+          <p class="ing-description">
+            Venerated in the Charaka Samhita as the supreme Rasayana for hair. Amla harbors the highest bio-available concentration of natural Vitamin C on Earth, neutralizing free radicals that attack the scalp papillary matrix and preventing premature melanin degradation (silvering).
+          </p>
+          <div class="ing-attributes-grid">
+            <div class="ing-attr-box">
+              <span class="attr-title">Active Molecules</span>
+              <span class="attr-val">Ellagic Acid • Gallic Acid</span>
+            </div>
+            <div class="ing-attr-box">
+              <span class="attr-title">Dosha Harmony</span>
+              <span class="attr-val">Tridoshic (Soothes Pitta & Vata)</span>
+            </div>
+            <div class="ing-attr-box">
+              <span class="attr-title">Botanical Part</span>
+              <span class="attr-val">Fresh Berries (Cold-Pressed)</span>
+            </div>
+          </div>
+          <ul class="ing-key-benefits-list">
+            <li><i class="fa-solid fa-spa"></i> Stimulates follicular collagen synthesis for 3x root anchorage</li>
+            <li><i class="fa-solid fa-spa"></i> Inhibits 5α-reductase, reducing DHT-induced crown thinning</li>
+            <li><i class="fa-solid fa-spa"></i> Natural antioxidant shield preserving deep natural hair pigment</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BENEFITS SECTION: Premium Editorial Layout with 6 Pillars, Botanical Illustrations & Scroll Reveals -->
+  <section class="benefits-section section-padding" id="benefits">
+
+    <!-- Decorative floating leaves specific to benefits -->
+    <div class="ben-float-leaf ben-leaf-1">
+      <svg viewBox="0 0 80 120" fill="none"><path d="M40 0C40 0 5 35 5 70C5 95 20 115 40 120C60 115 75 95 75 70C75 35 40 0 40 0Z" fill="currentColor"/><path d="M40 10V115" stroke="rgba(255,255,255,0.15)" stroke-width="1.2"/></svg>
+    </div>
+    <div class="ben-float-leaf ben-leaf-2">
+      <svg viewBox="0 0 80 120" fill="none"><path d="M40 0C40 0 5 35 5 70C5 95 20 115 40 120C60 115 75 95 75 70C75 35 40 0 40 0Z" fill="currentColor"/><path d="M40 10V115" stroke="rgba(255,255,255,0.15)" stroke-width="1.2"/></svg>
+    </div>
+    <div class="ben-float-leaf ben-leaf-3">
+      <svg viewBox="0 0 80 120" fill="none"><path d="M40 0C40 0 5 35 5 70C5 95 20 115 40 120C60 115 75 95 75 70C75 35 40 0 40 0Z" fill="currentColor"/><path d="M40 10V115" stroke="rgba(255,255,255,0.15)" stroke-width="1.2"/></svg>
+    </div>
+
+    <!-- Gold filigree accent lines -->
+    <div class="ben-filigree-top"></div>
+    <div class="ben-filigree-bot"></div>
+
+    <div class="container">
+
+      <!-- Editorial Section Header -->
+      <div class="section-header-center ben-header">
+        <span class="section-label">Ayurvedic Hair Rituals</span>
+        <h2 class="section-title ben-title">Six Pillars of Keshatel Hair Vitality</h2>
+        <p class="section-subtitle ben-subtitle">
+          A harmonious convergence of ancient Vedic wisdom and modern botanics — each pillar crafted to transform your hair from root to radiant tip.
+        </p>
+        <!-- Decorative gold divider -->
+        <div class="ben-ornament-divider">
+          <span class="ben-orn-line"></span>
+          <span class="ben-orn-lotus">
+            <svg viewBox="0 0 40 40" width="32" height="32"><circle cx="20" cy="20" r="5" fill="#D4AF37"/><g stroke="#D4AF37" stroke-width="1.2" fill="none"><ellipse cx="20" cy="10" rx="4" ry="9" transform="rotate(0,20,20)"/><ellipse cx="20" cy="10" rx="4" ry="9" transform="rotate(45,20,20)"/><ellipse cx="20" cy="10" rx="4" ry="9" transform="rotate(90,20,20)"/><ellipse cx="20" cy="10" rx="4" ry="9" transform="rotate(135,20,20)"/></g></svg>
+          </span>
+          <span class="ben-orn-line"></span>
+        </div>
+      </div>
+
+      <!-- Benefit 1 — Stronger-Looking Hair  (Editorial Row: text left, illustration right) -->
+      <div class="ben-editorial-row ben-reveal" data-ben-delay="0">
+        <div class="ben-editorial-text">
+          <div class="ben-num-badge">01</div>
+          <h3 class="ben-editorial-title">Stronger-Looking Hair</h3>
+          <p class="ben-editorial-desc">
+            Cold-pressed herbal lipids and essential fatty acids penetrate deep into the hair cortex, reinforcing keratin bonds from cuticle to medulla — visibly reducing breakage and split ends within weeks.
+          </p>
+          <div class="ben-botanical-tag">
+            <i class="fa-solid fa-seedling"></i> Bhringraj & Amla Complex
+          </div>
+        </div>
+        <div class="ben-editorial-visual">
+          <div class="ben-circle-illustration">
+            <div class="ben-circle-ring"></div>
+            <div class="ben-circle-icon">
+              <i class="fa-solid fa-hand-fist"></i>
+            </div>
+            <!-- Botanical accent dots -->
+            <span class="ben-orbit-dot" style="--orbit-angle:30deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:150deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:270deg;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefit 2 — Scalp Nourishment  (Editorial Row: reversed) -->
+      <div class="ben-editorial-row ben-row-reverse ben-reveal" data-ben-delay="1">
+        <div class="ben-editorial-text">
+          <div class="ben-num-badge">02</div>
+          <h3 class="ben-editorial-title">Scalp Nourishment</h3>
+          <p class="ben-editorial-desc">
+            Infused with antimicrobial Neem extract and cooling Aloe Vera gel, Keshatel deeply hydrates the dermal layer, balancing sebum production and calming inflammation for a healthy, flake-free scalp.
+          </p>
+          <div class="ben-botanical-tag">
+            <i class="fa-solid fa-leaf"></i> Neem & Aloe Vera Fusion
+          </div>
+        </div>
+        <div class="ben-editorial-visual">
+          <div class="ben-circle-illustration">
+            <div class="ben-circle-ring"></div>
+            <div class="ben-circle-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <span class="ben-orbit-dot" style="--orbit-angle:60deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:180deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:300deg;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefit 3 — Natural Shine -->
+      <div class="ben-editorial-row ben-reveal" data-ben-delay="2">
+        <div class="ben-editorial-text">
+          <div class="ben-num-badge">03</div>
+          <h3 class="ben-editorial-title">Natural Shine</h3>
+          <p class="ben-editorial-desc">
+            Crimson Hibiscus amino acids and plant mucilage form a light-reflecting botanical sheath over hair cuticles, delivering intense mirror-like gloss with zero grease or product build-up.
+          </p>
+          <div class="ben-botanical-tag">
+            <i class="fa-solid fa-sun"></i> Hibiscus Petal Extract
+          </div>
+        </div>
+        <div class="ben-editorial-visual">
+          <div class="ben-circle-illustration">
+            <div class="ben-circle-ring"></div>
+            <div class="ben-circle-icon">
+              <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <span class="ben-orbit-dot" style="--orbit-angle:10deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:130deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:250deg;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefit 4 — Hair Moisturisation (reversed) -->
+      <div class="ben-editorial-row ben-row-reverse ben-reveal" data-ben-delay="3">
+        <div class="ben-editorial-text">
+          <div class="ben-num-badge">04</div>
+          <h3 class="ben-editorial-title">Hair Moisturisation</h3>
+          <p class="ben-editorial-desc">
+            A velvet emollient formula with cold-pressed Coconut and Sesame oils locks in deep moisture without heaviness, restoring elasticity and softness to even the driest, most brittle strands.
+          </p>
+          <div class="ben-botanical-tag">
+            <i class="fa-solid fa-droplet"></i> Coconut & Sesame Infusion
+          </div>
+        </div>
+        <div class="ben-editorial-visual">
+          <div class="ben-circle-illustration">
+            <div class="ben-circle-ring"></div>
+            <div class="ben-circle-icon">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <span class="ben-orbit-dot" style="--orbit-angle:50deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:170deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:290deg;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefit 5 — Herbal Goodness -->
+      <div class="ben-editorial-row ben-reveal" data-ben-delay="4">
+        <div class="ben-editorial-text">
+          <div class="ben-num-badge">05</div>
+          <h3 class="ben-editorial-title">Herbal Goodness</h3>
+          <p class="ben-editorial-desc">
+            Slow-cooked using the 14-day Taila Paka Vidhi method with 21 sacred Ayurvedic botanicals — each herb releasing its full bio-active potency into every golden drop for pure, uncompromised wellness.
+          </p>
+          <div class="ben-botanical-tag">
+            <i class="fa-solid fa-mortar-pestle"></i> 21 Sacred Botanicals
+          </div>
+        </div>
+        <div class="ben-editorial-visual">
+          <div class="ben-circle-illustration">
+            <div class="ben-circle-ring"></div>
+            <div class="ben-circle-icon">
+              <i class="fa-solid fa-flask-vial"></i>
+            </div>
+            <span class="ben-orbit-dot" style="--orbit-angle:80deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:200deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:320deg;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefit 6 — Everyday Hair Care (reversed) -->
+      <div class="ben-editorial-row ben-row-reverse ben-reveal" data-ben-delay="5">
+        <div class="ben-editorial-text">
+          <div class="ben-num-badge">06</div>
+          <h3 class="ben-editorial-title">Everyday Hair Care</h3>
+          <p class="ben-editorial-desc">
+            Lightweight, non-greasy and instantly absorbing — Keshatel is designed for daily use. A few drops on damp or dry hair tames frizz, adds natural bounce, and protects against heat and UV damage.
+          </p>
+          <div class="ben-botanical-tag">
+            <i class="fa-solid fa-calendar-check"></i> Daily Ritual Ready
+          </div>
+        </div>
+        <div class="ben-editorial-visual">
+          <div class="ben-circle-illustration">
+            <div class="ben-circle-ring"></div>
+            <div class="ben-circle-icon">
+              <i class="fa-solid fa-pump-soap"></i>
+            </div>
+            <span class="ben-orbit-dot" style="--orbit-angle:40deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:160deg;"></span>
+            <span class="ben-orbit-dot" style="--orbit-angle:280deg;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clinical Stat Cards -->
+      <div class="clinical-stats-container">
+        <div class="clinical-stat-card">
+          <div class="clinical-percent">96%</div>
+          <div class="clinical-title">Reduced Hair Fallout</div>
+          <p class="clinical-desc">Significantly fewer hairs captured during brushing within 21 days.</p>
+        </div>
+        <div class="clinical-stat-card">
+          <div class="clinical-percent">91%</div>
+          <div class="clinical-title">Fuller Hairline Density</div>
+          <p class="clinical-desc">Noticeable regrowth of fine vellus baby hairs at temples and parting.</p>
+        </div>
+        <div class="clinical-stat-card">
+          <div class="clinical-percent">98%</div>
+          <div class="clinical-title">Scalp Soothed & Flake-Free</div>
+          <p class="clinical-desc">Zero dryness, flaking, or itchiness reported by dry scalp subjects.</p>
+        </div>
+        <div class="clinical-stat-card">
+          <div class="clinical-percent">3.2x</div>
+          <div class="clinical-title">Strand Tensile Strength</div>
+          <p class="clinical-desc">Measurable resistance against mechanical breakage and heat styling.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Before & After Comparison Slider -->
+      <div class="before-after-wrapper">
+        <div class="ba-info">
+          <span class="section-label">Real Transformation</span>
+          <h3>Visible Regrowth in 60 Days</h3>
+          <p>
+            Slide the divider to compare follicle density before and after 60 days of the twice-weekly Keshatel warm oil ritual.
+          </p>
+          <div class="ba-timeline-points">
+            <div class="timeline-point">
+              <span class="point-badge">Day 1</span>
+              <div class="point-text">
+                <h5>Thinning Part Line & Follicle Exhaustion</h5>
+                <p>Brittle, dull strands with visible scalp exposed along center parting.</p>
+              </div>
+            </div>
+            <div class="timeline-point">
+              <span class="point-badge">Day 30</span>
+              <div class="point-text">
+                <h5>Root Anchorage & Shedding Cessation</h5>
+                <p>Follicle anchorage reinforced; hair shedding drops by 80%.</p>
+              </div>
+            </div>
+            <div class="timeline-point">
+              <span class="point-badge">Day 60</span>
+              <div class="point-text">
+                <h5>Dense Anagen Sprouting & Mirror Gloss</h5>
+                <p>Dense new hair growth fills part line with deep luster and bounce.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#products" class="btn-primary">
+            Start Your Transformation
+          </a>
+        </div>
+
+        <!-- Before & After Interactive Image Slider -->
+        <div class="ba-slider-container" id="ba-slider-container">
+          <!-- Before Image (Base) -->
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Before Hair Oil" class="ba-img">
+          <span class="ba-label ba-label-before">Day 1 (Before)</span>
+
+          <!-- After Image (Clipped) -->
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="After Hair Oil" class="ba-img-after" id="ba-img-after">
+          <span class="ba-label ba-label-after">Day 60 (After)</span>
+
+          <!-- Handle -->
+          <div class="ba-handle" id="ba-slider-handle">
+            <div class="ba-handle-btn">
+              <i class="fa-solid fa-left-right"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRODUCT SHOWCASE SECTION: Keshatel Herbal Hair Oil Collection -->
+  <section class="products-section section-padding" id="products">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <span class="section-label">Ayurvedic Formulations</span>
+        <h2 class="section-title">Keshatel Herbal Hair Oil Collection</h2>
+        <p class="section-subtitle">
+          Handcrafted in micro-batches with pure cold-pressed botanicals. Choose your ideal bottle size or ritual box.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="product-filter-bar">
+        <button class="filter-btn active" onclick="document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active'); window.KeshavedaStore.renderProductCards('all');">All Formulations</button>
+        <button class="filter-btn" onclick="document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active'); window.KeshavedaStore.renderProductCards('oil');">Herbal Hair Oils</button>
+        <button class="filter-btn" onclick="document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active'); window.KeshavedaStore.renderProductCards('serum');">Root Serums</button>
+        <button class="filter-btn" onclick="document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active'); window.KeshavedaStore.renderProductCards('kit');">Ritual Kits</button>
+      </div>
+
+      <!-- Products Grid (Rendered dynamically by store.js) -->
+      <div class="products-grid" id="products-grid-container">
+        <!-- Injected by StoreEngine -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AYURVEDIC RITUAL SECTION: The 3-Step Shiro Abhyanga -->
+  <section class="ritual-section section-padding" id="ritual">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <span class="section-label">The Sacred Protocol</span>
+        <h2 class="section-title">The 3-Step Shiro Abhyanga Ritual</h2>
+        <p class="section-subtitle">
+          An ancient mindful evening practice connecting root, crown, and spirit.
+        </p>
+      </div>
+
+      <div class="ritual-steps-grid">
+        <div class="ritual-step-card">
+          <div class="step-num-circle">I</div>
+          <h4>Awaken & Warm</h4>
+          <p>
+            Dispense 5–8 drops of elixir into your palms or warm the flacon in a bowl of warm water for 2 minutes to activate the botanical terpenes. Cup your hands and inhale the grounding aroma of Himalayan woods.
+          </p>
+        </div>
+
+        <div class="ritual-step-card">
+          <div class="step-num-circle">II</div>
+          <h4>Marma Point Scalp Massage</h4>
+          <p>
+            Part your hair and press the oil directly into the scalp. Using firm circular motions with your fingertips or the Kansa wand, stimulate the *Adhipati* (crown) and *Simanta* Marma points to boost blood circulation.
+          </p>
+        </div>
+
+        <div class="ritual-step-card">
+          <div class="step-num-circle">III</div>
+          <h4>Rest & Rinse</h4>
+          <p>
+            Leave the herbal oil on for at least 45 minutes or overnight wrapped in silk. Rinse with lukewarm water and a sulfate-free cleanser. Witness hair transformed with mirror-like weightless gloss.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REVIEWS & TESTIMONIALS SECTION -->
+  <section class="reviews-section section-padding" id="reviews">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <span class="section-label">Vedic Community Praise</span>
+        <h2 class="section-title">Loved by Over 14,000 Crowns Worldwide</h2>
+      </div>
+
+      <!-- Rating Score Hero Card -->
+      <div class="reviews-score-hero">
+        <div class="score-main">
+          <div class="score-big">4.9</div>
+          <div class="score-details">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Based on <strong>14,280+ verified buyer reviews</strong> across 42 countries</p>
+          </div>
+        </div>
+
+        <div class="review-action-btns">
+          <button class="btn-primary" id="open-review-modal-btn">
+            <i class="fa-solid fa-pen-nib"></i> Write a Review
+          </button>
+        </div>
+      </div>
+
+      <!-- Reviews Filter Pills -->
+      <div class="product-filter-bar" style="margin-bottom: 36px;">
+        <button class="filter-btn review-filter-btn active" data-category="all">All Reviews</button>
+        <button class="filter-btn review-filter-btn" data-category="thinning">Hair Thinning & Regrowth</button>
+        <button class="filter-btn review-filter-btn" data-category="scalp">Scalp Flakes & Itch</button>
+        <button class="filter-btn review-filter-btn" data-category="curls">Curly & Textured Hair</button>
+        <button class="filter-btn review-filter-btn" data-category="shine">Color-Treated & Shine</button>
+      </div>
+
+      <!-- Reviews Grid (Rendered dynamically by main.js) -->
+      <div class="reviews-grid" id="reviews-grid-container">
+        <!-- Injected by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AYURVEDIC HAIR DOSHA QUIZ BANNER -->
+  <section class="quiz-banner-section">
+    <div class="container">
+      <div class="quiz-banner-box">
+        <div class="quiz-banner-text">
+          <span class="section-label" style="margin-bottom: 6px;">Crown Diagnostic</span>
+          <h3>Unsure Which Botanical Formulation Fits Your Hair?</h3>
+          <p>
+            Take our 60-second Vedic Dosha assessment. Our Ayurvedic algorithm diagnoses your root climate and curates your bespoke herbal regimen.
+          </p>
+        </div>
+        <button class="btn-primary" onclick="document.getElementById('start-quiz-btn').click();">
+          Take Hair Dosha Quiz
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & CONSULTATION SECTION: FAQs + Consultation Form -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container contact-grid">
+      
+      <!-- Left Column: Consultation Info & FAQ Accordion -->
+      <div class="contact-info-col">
+        <span class="section-label">Ayurvedic Apothecary Support</span>
+        <h3>Speak with Our Herbal Vaidya</h3>
+        <p>
+          Have questions regarding postpartum shedding, scalp sensitivities, or blending herbs? Our certified Ayurvedic herbal practitioners are here to guide your journey.
+        </p>
+
+        <div class="contact-methods">
+          <div class="contact-method-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h5>Apothecary Inquiries</h5>
+              <p>care@keshatel.com</p>
+            </div>
+          </div>
+          <div class="contact-method-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h5>Herbalist Consultation Hotline</h5>
+              <p>+1 (800) 537-4283 (Mon–Fri, 9am–6pm EST)</p>
+            </div>
+          </div>
+          <div class="contact-method-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h5>Artisanal Apothecary Studios</h5>
+              <p>Haridwar, Uttarakhand • London • New York</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="faq-box">
+          <h4>Frequently Answered Inquiries</h4>
+          <div class="accordion-item">
+            <button class="accordion-btn">
+              <span>How often should I apply Keshatel Herbal Hair Oil?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>For intensive regrowth and halting shedding, apply 2 to 3 times weekly before bed. For general scalp wellness and shine maintenance, once weekly as a pre-wash treatment is ideal.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn">
+              <span>Is it suitable for colored, bleached, or keratin-treated hair?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, 100%. Our formulations are completely free of sulfates, silicones, and synthetic pigments. The natural bioflavonoids in Amla and Hibiscus actually protect and preserve artificial hair color while restoring moisture.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn">
+              <span>Will the rich herbal green oil stain my pillows or clothes?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Because we use cold-pressed sesame and virgin coconut oils that rapidly absorb into the scalp within 15–20 minutes, staining is rare. If applying overnight, we recommend resting on a dark silk pillowcase or hair wrap.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Consultation Booking Form -->
+      <div class="contact-form-card">
+        <h4>Book a Complimentary Consultation</h4>
+        <p>Receive a bespoke herbal prescription from our Keshatel Ayurvedic experts.</p>
+
+        <form id="consultation-form">
+          <div class="form-group">
+            <label class="form-label" for="consult-name">Full Name</label>
+            <input type="text" id="consult-name" class="form-input" placeholder="e.g. Maya Sharma" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="consult-email">Email Address</label>
+            <input type="email" id="consult-email" class="form-input" placeholder="e.g. maya@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="consult-concern">Primary Hair/Scalp Concern</label>
+            <select id="consult-concern" class="form-select">
+              <option value="thinning">Excessive Hair Fall & Thinning Temples</option>
+              <option value="dandruff">Dry Flakes, Itch & Scalp Psoriasis</option>
+              <option value="damage">Chemical, Bleach & Heat Damage</option>
+              <option value="greying">Premature Silvering & Color Fading</option>
+              <option value="wellness">General Ayurvedic Hair Vitality</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="consult-notes">Personal Notes / Hair History</label>
+            <textarea id="consult-notes" class="form-textarea" placeholder="Tell our herbalists about your current routine, hair thickness, or specific questions..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-paper-plane"></i> Request Vedic Consultation
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="site-logo">
+            <div class="logo-symbol">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">KESHATEL</span>
+              <span class="logo-subtitle">Ayurvedic Hair Care</span>
+            </div>
+          </a>
+          <p>
+            Rooted in 5,000 years of authentic Ayurvedic science. Micro-batch slow-simmered herbal hair elixirs that unlock the secret of naturally beautiful hair.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>The Formulations</h5>
+          <ul class="footer-links">
+            <li><a href="#products">Keshatel Herbal Hair Oil</a></li>
+            <li><a href="#products">Hibiscus Scalp Serum</a></li>
+            <li><a href="#products">Virgin Amla & Brahmi Nectar</a></li>
+            <li><a href="#products">Kansa Wand Ritual Kit</a></li>
+            <li><a href="#ritual">The Shiro Abhyanga Protocol</a></li>
+          </ul>
+        </div>
+
+        <!-- Vedic Science -->
+        <div class="footer-col">
+          <h5>Ancient Traditions</h5>
+          <ul class="footer-links">
+            <li><a href="#about">The 14-Day Taila Paka Vidhi</a></li>
+            <li><a href="#ingredients">Sacred Botanicals (Amla & Neem)</a></li>
+            <li><a href="#benefits">Six Pillars of Hair Vitality</a></li>
+            <li><a href="#contact">Consult with a Vaidya</a></li>
+            <li><a href="#contact">Hair Dosha Quiz</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="footer-col newsletter-box">
+          <h5>Join the Sacred Circle</h5>
+          <p>Subscribe for lunar ritual guides, Ayurvedic wisdom, and receive <strong>15% off</strong> your first order with code <strong>KESHATEL15</strong>.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); window.KeshavedaStore.showToast('Welcome to Keshatel! Promo code KESHATEL15 applied.');">
+            <input type="email" class="newsletter-input" placeholder="Your sacred email" required>
+            <button type="submit" class="newsletter-submit">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 KESHATEL Botanics Inc. All Rights Reserved. Ayush Pharmacopoeia Certified.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Alchemy</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Ayurvedic Disclaimers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS: CART DRAWER, QUICK VIEW, DOSHA QUIZ, WRITE REVIEW & CHECKOUT
+       ========================================================================== -->
+
+  <!-- Slide-out Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>Your Botanical Bag</h3>
+        <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close Bag">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Free Shipping Meter -->
+      <div class="free-shipping-meter">
+        <span id="shipping-meter-text">Add <strong>$17.00</strong> more for Free Global Shipping & Kansa Comb</span>
+        <div class="meter-track">
+          <div class="meter-fill" id="shipping-meter-fill"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items List Container -->
+      <div class="cart-items-container" id="cart-items-list">
+        <!-- Rendered by store.js -->
+      </div>
+
+      <!-- Cart Drawer Footer -->
+      <div class="cart-footer">
+        <div class="promo-row">
+          <input type="text" id="cart-promo-input" class="promo-input" placeholder="PROMO CODE (e.g. VEDA15)">
+          <button class="promo-btn" id="apply-promo-btn">Apply</button>
+        </div>
+        <div class="cart-summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="cart-summary-line" style="color: var(--gold-light);">
+          <span>Sacred Discount</span>
+          <span id="cart-discount">$0.00</span>
+        </div>
+        <div class="cart-summary-line total">
+          <span>Total</span>
+          <span id="cart-final-total">$0.00</span>
+        </div>
+        <button class="cart-checkout-btn" id="cart-checkout-btn">
+          Proceed to Sacred Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quick-view-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-quick-view" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="quick-view-content">
+        <!-- Populated dynamically by StoreEngine -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Hair Dosha Quiz Modal -->
+  <div class="modal-overlay" id="quiz-modal">
+    <div class="modal-card" style="max-width: 600px;">
+      <button class="modal-close-btn" id="close-quiz-modal" aria-label="Close Quiz">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="quiz-modal-body">
+        <!-- Injected dynamically by store.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Write Review Modal -->
+  <div class="modal-overlay" id="review-modal">
+    <div class="modal-card" style="max-width: 540px; padding: 36px;">
+      <button class="modal-close-btn" id="close-review-modal" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="section-label">Your Experience</span>
+      <h3 style="font-size: 1.8rem; color: var(--cream-light); margin-bottom: 8px;">Share Your Crown Transformation</h3>
+      <p style="color: var(--cream-muted); font-size: 0.9rem; margin-bottom: 24px;">Your testimonial guides fellow seekers toward Ayurvedic vitality.</p>
+      
+      <form id="review-form">
+        <div class="form-group">
+          <label class="form-label" for="review-name">Your Name</label>
+          <input type="text" id="review-name" class="form-input" placeholder="e.g. Sunita K." required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="review-hair-type">Hair Type / Concern</label>
+          <input type="text" id="review-hair-type" class="form-input" placeholder="e.g. Type 3B Curls, Post-partum Thinning" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Star Rating</label>
+          <div id="star-picker" style="display: flex; gap: 8px; color: var(--gold-primary); font-size: 1.5rem; cursor: pointer; margin-top: 4px;">
+            <i class="fa-solid fa-star" data-val="1"></i>
+            <i class="fa-solid fa-star" data-val="2"></i>
+            <i class="fa-solid fa-star" data-val="3"></i>
+            <i class="fa-solid fa-star" data-val="4"></i>
+            <i class="fa-solid fa-star" data-val="5"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="review-comment">Your Testimonial</label>
+          <textarea id="review-comment" class="form-textarea" placeholder="How did your hair feel after using the elixir?" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+          Submit Testimonial
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Instant Checkout Modal -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-card checkout-modal-content">
+      <button class="modal-close-btn" id="close-checkout-modal" aria-label="Close Checkout">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div id="checkout-modal-body">
+        <span class="section-label">Safe & Secure Checkout</span>
+        <h2 style="font-size: 2rem; color: var(--cream-light); margin-bottom: 6px;">Complete Your Sacred Order</h2>
+        <p style="color: var(--cream-muted); font-size: 0.92rem;">Cold-chain express dispatch directly from our Ayurvedic apothecaries.</p>
+
+        <div class="checkout-grid">
+          <!-- Shipping & Billing Details -->
+          <form id="checkout-form">
+            <h5 style="color: var(--gold-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 14px;">1. Shipping Address</h5>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+              <input type="text" class="form-input" placeholder="First Name" required value="Sunita">
+              <input type="text" class="form-input" placeholder="Last Name" required value="Patel">
+            </div>
+
+            <div class="form-group">
+              <input type="email" class="form-input" placeholder="Email Address for tracking" required value="sunita.patel@example.com">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder="Street Address" required value="742 Evergreen Botanical Way">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; margin-bottom: 24px;">
+              <input type="text" class="form-input" placeholder="City" required value="San Francisco">
+              <input type="text" class="form-input" placeholder="State/Region" required value="CA">
+              <input type="text" class="form-input" placeholder="Postal Code" required value="94107">
+            </div>
+
+            <h5 style="color: var(--gold-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 14px;">2. Payment Method</h5>
+            <div class="payment-methods-selector">
+              <div class="pay-method-btn active" data-method="card">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Credit Card</span>
+              </div>
+              <div class="pay-method-btn" data-method="apple">
+                <i class="fa-brands fa-apple"></i>
+                <span>Apple Pay / GPay</span>
+              </div>
+              <div class="pay-method-btn" data-method="upi">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>UPI / NetBanking</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder="Card Number (Mock)" value="4532 •••• •••• 8842">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px;">
+              <input type="text" class="form-input" placeholder="MM/YY" value="08/29">
+              <input type="text" class="form-input" placeholder="CVV" value="882">
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; font-size: 1rem;">
+              <i class="fa-solid fa-lock"></i> Authorize & Place Order
+            </button>
+          </form>
+
+          <!-- Order Summary Column -->
+          <div id="checkout-summary-box">
+            <!-- Injected by StoreEngine -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Back-to-Top Button with Circular Progress Meter -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+    <svg class="progress-ring" width="50" height="50">
+      <circle class="progress-ring-circle" stroke="rgba(197, 160, 89, 0.3)" stroke-width="2.5" fill="transparent" r="20" cx="25" cy="25"/>
+      <circle class="progress-ring-fill" id="scroll-progress-fill" stroke="#D4AF37" stroke-width="2.5" fill="transparent" r="20" cx="25" cy="25"/>
+    </svg>
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ==========================================================================
+       EXTERNAL SCRIPTS & LIBRARIES
+       Three.js for 3D Bottle | Canvas Confetti for Checkout Celebrations
+       ========================================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/three-bottle.js"></script>
+  <script src="js/leaves.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

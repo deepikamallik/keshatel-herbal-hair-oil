@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KESHATEL | Nature's Secret to Beautiful Hair | Enter</title>
+  <meta name="description" content="Welcome to KESHATEL. Discover Nature's Secret to Beautiful Hair through sacred Ayurvedic hair alchemy. Enter the world of cold-pressed herbal elixirs.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+  <!-- Google Fonts: Cinzel, Cormorant Garamond, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Entry Stylesheet -->
+  <link rel="stylesheet" href="css/entry.css">
+</head>
+<body>
+
+  <!-- Floating Green Leaves Canvas Overlay -->
+  <canvas id="botanical-canvas"></canvas>
+
+  <!-- Full-Screen Entry Viewport -->
+  <main class="entry-viewport" id="entry-viewport" aria-label="Enter Keshatel Experience">
+    
+    <!-- Cinematic Ambient Background Glow Orbs -->
+    <div class="ambient-glow-orb orb-center"></div>
+    <div class="ambient-glow-orb orb-top-left"></div>
+    <div class="ambient-glow-orb orb-bottom-right"></div>
+
+    <!-- Sacred Botanical Mandala Background Ring -->
+    <div class="sacred-mandala-ring"></div>
+
+    <!-- Fine Vignette Shadow Frame -->
+    <div class="vignette-overlay"></div>
+
+    <!-- Corner Filigree Borders -->
+    <div class="corner-filigree corner-tl"></div>
+    <div class="corner-filigree corner-tr"></div>
+    <div class="corner-filigree corner-bl"></div>
+    <div class="corner-filigree corner-br"></div>
+
+    <!-- Central Interactive Brand Portal Card -->
+    <div class="brand-portal-card" id="brand-portal-card" title="Click anywhere to enter">
+      
+      <!-- 1. Minimal Herbal Leaf Logo -->
+      <div class="leaf-logo-wrapper">
+        <svg class="leaf-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Keshatel Sacred Leaf Logo">
+          <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF2CE" />
+              <stop offset="40%" stop-color="#D4AF37" />
+              <stop offset="70%" stop-color="#ECC880" />
+              <stop offset="100%" stop-color="#9E7A32" />
+            </linearGradient>
+            <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+          </defs>
+          
+          <!-- Outer Sacred Circle Accent -->
+          <circle cx="50" cy="50" r="46" stroke="url(#goldGrad)" stroke-width="1.2" stroke-opacity="0.4" stroke-dasharray="2 3" />
+          
+          <!-- Left Herbal Leaf -->
+          <path d="M50 82 C42 68 22 55 24 34 C25 21 37 14 49 18 C47 30 45 48 50 82 Z" fill="url(#goldGrad)" fill-opacity="0.22" stroke="url(#goldGrad)" stroke-width="1.8" />
+          <!-- Left Leaf Vein -->
+          <path d="M49 22 C46 36 43 52 50 80" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.6" />
+
+          <!-- Right Herbal Leaf -->
+          <path d="M50 82 C58 68 78 55 76 34 C75 21 63 14 51 18 C53 30 55 48 50 82 Z" fill="url(#goldGrad)" fill-opacity="0.22" stroke="url(#goldGrad)" stroke-width="1.8" />
+          <!-- Right Leaf Vein -->
+          <path d="M51 22 C54 36 57 52 50 80" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.6" />
+
+          <!-- Central Radiant Seed / Dewdrop -->
+          <circle cx="50" cy="46" r="3.5" fill="url(#goldGrad)" filter="url(#goldGlow)" />
+        </svg>
+      </div>
+
+      <!-- 2. Brand Title with Subtle Glowing Halo -->
+      <div class="brand-title-wrap">
+        <div class="brand-glow-halo"></div>
+        <h1 class="brand-title">KESHATEL</h1>
+      </div>
+
+      <!-- 3. Brand Tagline -->
+      <p class="brand-tagline">Nature’s Secret to Beautiful Hair</p>
+
+      <!-- Divider Gold Accent -->
+      <div class="brand-divider"></div>
+
+      <!-- 4. ENTER THE WORLD OF KESHATEL Button -->
+      <button class="enter-button" id="enter-world-btn" aria-label="Enter The World of Keshatel">
+        <span class="enter-button-main">
+          <span>Enter the World of Keshatel</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </span>
+        <span class="enter-subtext">Sacred Ayurvedic Hair Alchemy</span>
+      </button>
+
+      <!-- Subtle Click/Tap Hint -->
+      <div class="tap-prompt">
+        <i class="fa-solid fa-sparkles" style="color: var(--gold-primary);"></i>
+        <span>Click or tap anywhere to explore</span>
+      </div>
+
+    </div>
+
+    <!-- Heritage Footer Bar -->
+    <div class="heritage-footer-bar">
+      <span>100% Ayurvedic</span>
+      <span class="bullet">◆</span>
+      <span>21 Himalayan Botanicals</span>
+      <span class="bullet">◆</span>
+      <span>Taila Paka Vidhi Slow Cooked</span>
+      <span class="bullet">◆</span>
+      <span>Cold Pressed</span>
+    </div>
+
+  </main>
+
+  <!-- Cinematic Transition Curtain (Dissolve & Light Burst) -->
+  <div class="transition-curtain" id="transition-curtain"></div>
+
+  <!-- Scripts: Botanical Floating Green Leaves & Entry Interaction -->
+  <script src="js/leaves.js"></script>
+  <script src="js/entry.js"></script>
+
+</body>
+</html>
